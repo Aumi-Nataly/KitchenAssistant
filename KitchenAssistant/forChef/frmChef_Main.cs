@@ -55,6 +55,8 @@ namespace KitchenAssistant.forChef
         private void buttonInProgressOrder_Click(object sender, EventArgs e)
         {
             labelRazdel.Text = buttonInProgressOrder.Text;
+
+            this.panelBody.Controls.Clear();
         }
     }
 }
