@@ -36,6 +36,7 @@
             this.labelUserName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelHead = new System.Windows.Forms.Panel();
+            this.labelRazdel = new System.Windows.Forms.Label();
             this.buttonClose = new System.Windows.Forms.Button();
             this.labelDate = new System.Windows.Forms.Label();
             this.panelBody = new System.Windows.Forms.Panel();
@@ -91,6 +92,7 @@
             this.buttonInProgressOrder.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonInProgressOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.buttonInProgressOrder.UseVisualStyleBackColor = true;
+            this.buttonInProgressOrder.Click += new System.EventHandler(this.buttonInProgressOrder_Click);
             // 
             // buttonNewOrders
             // 
@@ -108,6 +110,7 @@
             this.buttonNewOrders.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonNewOrders.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.buttonNewOrders.UseVisualStyleBackColor = true;
+            this.buttonNewOrders.Click += new System.EventHandler(this.buttonNewOrders_Click);
             // 
             // panelUserName
             // 
@@ -122,7 +125,7 @@
             // labelUserName
             // 
             this.labelUserName.AutoSize = true;
-            this.labelUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.labelUserName.ForeColor = System.Drawing.Color.LightYellow;
             this.labelUserName.Location = new System.Drawing.Point(52, 125);
             this.labelUserName.Name = "labelUserName";
@@ -144,6 +147,8 @@
             // 
             // panelHead
             // 
+            this.panelHead.BackColor = System.Drawing.Color.SteelBlue;
+            this.panelHead.Controls.Add(this.labelRazdel);
             this.panelHead.Controls.Add(this.buttonClose);
             this.panelHead.Controls.Add(this.labelDate);
             this.panelHead.Dock = System.Windows.Forms.DockStyle.Top;
@@ -151,6 +156,17 @@
             this.panelHead.Name = "panelHead";
             this.panelHead.Size = new System.Drawing.Size(956, 106);
             this.panelHead.TabIndex = 1;
+            // 
+            // labelRazdel
+            // 
+            this.labelRazdel.AutoSize = true;
+            this.labelRazdel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelRazdel.ForeColor = System.Drawing.Color.LightYellow;
+            this.labelRazdel.Location = new System.Drawing.Point(28, 16);
+            this.labelRazdel.Name = "labelRazdel";
+            this.labelRazdel.Size = new System.Drawing.Size(226, 37);
+            this.labelRazdel.TabIndex = 2;
+            this.labelRazdel.Text = "Новые заявки";
             // 
             // buttonClose
             // 
@@ -171,7 +187,7 @@
             this.labelDate.AutoSize = true;
             this.labelDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelDate.ForeColor = System.Drawing.Color.LightYellow;
-            this.labelDate.Location = new System.Drawing.Point(41, 36);
+            this.labelDate.Location = new System.Drawing.Point(588, 65);
             this.labelDate.Name = "labelDate";
             this.labelDate.Size = new System.Drawing.Size(215, 31);
             this.labelDate.TabIndex = 0;
@@ -224,5 +240,6 @@
         private Button buttonClose;
         private Label labelDate;
         private Panel panelBody;
+        private Label labelRazdel;
     }
 }

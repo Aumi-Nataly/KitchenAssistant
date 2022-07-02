@@ -83,6 +83,26 @@ namespace KitchenAssistant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap meat_food_chicken {
+            get {
+                object obj = ResourceManager.GetObject("meat_food_chicken", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap muffin_cake {
+            get {
+                object obj = ResourceManager.GetObject("muffin_cake", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap plus_green {
             get {
                 object obj = ResourceManager.GetObject("plus-green", resourceCulture);
